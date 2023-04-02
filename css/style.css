@@ -4978,7 +4978,7 @@ button.dropbtn .hidden-inp {
     top: 0;
     height: 100%;
     display: block;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     background: rgba(255,255,255,0.5);
     z-index: 50;
 }
@@ -18194,7 +18194,7 @@ h3.modal-title {
     color: #333;
 }
 .periodic__how-span--green{
-    color: #27C58B;
+    color: #27C58B !important;
 }
 .periodic__how{
     background: #F5F5F5;
@@ -18305,12 +18305,69 @@ h3.modal-title {
     line-height: 14px;
     color: #333;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.periodic__protect-item p span{
+    font-size: 12px;
+    font-weight: 700;
+    color: #27C58B;
+    position: relative;
+    top: 3px;
 }
 .periodic__protect-box .periodic__protect-item:last-child{
     border-bottom: none;
 }
 .periodic__title{
     margin-bottom: 0;
+}
+.periodic-widget--notyet{
+    position: relative;
+}
+.periodic-widget--notyet:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1%;
+    width: 100%;
+    height: 102%;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+.pnotyet{
+    width: 90%;
+    min-height: 114px;
+    position: absolute;
+    left: 5%;
+    top: 50px;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #D2D2D2;
+    text-align: center;
+    z-index: 2;
+}
+.pnotyet p{
+    color: #455A64;
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.pnotyet a{
+    color: #2D8EE7;
+    font-weight: 300;
+    font-size: 18px;
+}
+/**/
+.periodic__protect-saving--zero{
+    background: #F5F5F5;
+    color: #333;
 }
 /**/
 /**/
@@ -18334,6 +18391,12 @@ h3.modal-title {
     display: flex;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
+}
+.additional__boxes .checkbox img{
+    margin-right: 0;
+    position: relative;
+    bottom: -3px;
 }
 .additional .add-report-rca__text{
     margin-bottom: 22px;
@@ -18389,11 +18452,31 @@ h3.modal-title {
 .additional__rep img{
     max-width: 100%;
 }
-@media screen and (max-width: 1400px){
+.periodic__how-title{
+    margin-bottom: 15px;
+    font-size: 21px;
+    color: #333;
+    font-weight: 400;
+}
+@media screen and (max-width: 1500px){
+    .additional-direct-setting .alert-posit{
+        margin-top: 0;
+    }
     .additional__boxes{
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 1400px){
+    .additional-direct-setting .col-7{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .additional-direct-setting .col-5{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .additional__boxes{
+        flex-wrap: wrap;
     }
 }
 @media screen and (max-width: 1240px){
@@ -18429,10 +18512,25 @@ h3.modal-title {
         padding: 20px;
         gap: 10px;
     }
+    .additional-direct-setting .col-7{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .additional-direct-setting .col-5{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .additional-direct-setting .alert-posit{
+        margin-top: 20px;
+    }
+    .pnotyet p{
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 400px){
     .periodic__protect{
         flex-direction: column;
+        gap: 20px;
     }
     .periodic__protect-column{
         width: 100%;
