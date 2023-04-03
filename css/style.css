@@ -5036,6 +5036,7 @@ button.dropbtn .hidden-inp {
     border-radius: 10px;
     border: 2px solid #ffcf73;
     padding: 25px 30px;
+    width: 100%;
 }
 
 .periodic__alert-text{
@@ -18206,7 +18207,7 @@ h3.modal-title {
 .periodic__how{
     background: #F5F5F5;
     border-radius: 10px;
-    padding: 20px 18px 32px 20px;
+    padding: 25px 18px 32px 20px;
     width: 100%;
 }
 .add-report-rca{
@@ -18217,18 +18218,19 @@ h3.modal-title {
 }
 .periodic__wrapper{
     display: flex;
-    gap: 30px;
+    gap: 15px;
     max-width: 1034px;
 }
 .periodic__protect-column{
-    width: 49%;
+    width: 48%;
     border-radius: 10px;
     text-align: center;
-    padding: 14px 16px 10px;
+    padding: 14px 10px;
+    padding-bottom: 0;
 }
 .periodic__protect{
     display: flex;
-    gap: 2%;
+    gap: 4%;
     flex-wrap: wrap;
 }
 .periodic__left{
@@ -18247,19 +18249,19 @@ h3.modal-title {
 }
 .periodic__btn:hover{
     text-decoration: none;
-    color: #4F5A7C;
+    color: #333;
 }
 .periodic__protect-saving{
     width: 100%;
     margin-top: 15px;
-    height: 70px;
     background: #27C58B;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     color: #fff;
+    gap: 5px;
+    padding: 18px 0 13px;
 }
 .periodic__protect-saving span{
     font-size: 14px;
@@ -18288,17 +18290,16 @@ h3.modal-title {
     margin-top: 28px;
 }
 .periodic__protect-item{
-    padding: 10px 0;
+    padding: 9px 0;
     border-top: 1px solid rgba(3, 68, 44, .1);
     border-bottom: 1px solid rgba(3, 68, 44, .1)
 }
 .periodic__protect-item span{
-    margin-bottom: 7px;
-    font-size: 14px;
+    margin-bottom: 10px;
+    font-size: 12px;
     line-height: 14px;
     color: #333;
     display: block;
-    line-height: 150%;
     font-weight: 400;
 }
 .add-report-rca__text{
@@ -18319,10 +18320,11 @@ h3.modal-title {
 }
 .periodic__protect-item p span{
     font-size: 12px;
+    line-height: 14px;
     font-weight: 700;
     color: #27C58B;
-    position: relative;
-    top: 3px;
+    margin-bottom: 2px;
+    margin-left: 5px;
 }
 .periodic__protect-box .periodic__protect-item:last-child{
     border-bottom: none;
