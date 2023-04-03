@@ -4968,7 +4968,7 @@ button.dropbtn .hidden-inp {
     background: rgba(39, 197, 139, 0.08);
 }
 .periodic-check--highlight .ds-pcheck__info p{
-    color: #1DDA95;
+    color: #1DDA95 !important;
 }
 .periodic-check--notyet .periodic-check--notyet-blur{
     content: '';
