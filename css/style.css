@@ -5111,6 +5111,10 @@ button.dropbtn .hidden-inp {
     .ds-pcheck__lastcheck{
         font-size: 12px;
     }
+    .periodic__title{
+        font-size: 23px;
+        line-height: 29px;
+    }
 }
 @media screen and (max-width: 475px){
     .ds-pcheck__notyetblock{
@@ -18322,6 +18326,8 @@ h3.modal-title {
 }
 .periodic__title{
     margin-bottom: 0;
+    line-height: 36px;
+    margin: 25px 0 15px;
 }
 .periodic-widget--notyet{
     position: relative;
@@ -18429,9 +18435,12 @@ h3.modal-title {
     padding: 5px 40px;
     width: 200px;
     color: #333;
+    transition: 0.1s ease;
 }
 .additional__example-btn:hover{
-    color: #333;   
+    text-decoration: none;
+    background: #D4F3E8 ;
+    color: #333;
 }
 .additional__example-btn img{
     transform: rotate(180deg);
@@ -18448,6 +18457,9 @@ h3.modal-title {
     justify-content: center;
     align-items: center;
     max-width: 100%;
+}
+.additional__example-btn--active img{
+    transform: rotate(0);
 }
 .additional__rep img{
     max-width: 100%;
@@ -18526,6 +18538,13 @@ h3.modal-title {
     .pnotyet p{
         font-size: 18px;
     }
+    .periodic__title{
+        font-size: 26px;
+        margin-bottom: 8px !important;
+    }
+    .periodic-check--notyet .ds-pcheck__content:before{
+        backdrop-filter: blur(5px);
+    }
 }
 @media screen and (max-width: 400px){
     .periodic__protect{
@@ -18541,6 +18560,9 @@ h3.modal-title {
     .additional .add-report-rca__row{
         flex-direction: column;
         align-items: flex-start;
+    }
+    .periodic__title{
+        font-size: 22px;
     }
 }
 /**/
